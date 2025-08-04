@@ -1,0 +1,189 @@
+/*Folha de estilo para Obras*/
+
+*{ /*Aqui foi difinido que a pagina por padrão não terá padding, nem margin e que a fonte usada sera serif monoespaçada*/
+    margin: 0%;
+    padding:0%;
+    font-family: serif, monospace;
+}
+
+.titulo{/*modifica o titulo da pagina, cor, tamanho e alinhamento*/
+    margin-top:2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.introducao{ /*Folha de estilo para o fundo da introdução*/
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #0d324d;
+    border-radius: 2rem;
+}
+
+.introducao_texto{ /*Folha de estilo para o texto da introdução*/
+     text-align: start;
+    font-size: 2rem;
+    color: white;
+}
+.conteudo{/*Folha de estilo para o as sessões de obras, alinhamento, cor e tamanho do fundo*/
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+    width: 25rem;
+    height: 37rem;
+    margin-top: 5rem;
+    align-items: center;
+    border-radius: 1rem;
+}
+.conteudo_img{ /*Folha de estilo para as imagens*/
+    margin-top: 1rem;
+    width: 12rem;
+    height: 14rem;
+    border-radius: 0.5rem;
+}
+.conteudo_titulo{ /*Folha de estilo para os titulo*/
+    margin-top:2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.conteudo_texto{/*Folha de estilo para os textos*/
+    margin-top:1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.conteudo_link img{/*Folha de estilo para os links*/
+    margin-top: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem ;
+    width: 4rem;
+    height: 2rem;
+    padding-left:0.5rem ;
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+}
+.conteudo_titulo_ninar{/*Folha de estilo para o titulo "Canção de ninar menino grande"*/
+    margin-top:2.2rem;
+    font-size: 2.5rem;
+    color: white;
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ 
+}
+
+.sessao1{/*Folha de estilo para o alinhamento das sessões dos 3 primeiro livros, deixando elas uma ao lado da outra*/
+    display: flex;
+    justify-content: space-around;
+}
+.sessao2{/*Folha de estilo para o alinhamento das sessões dos 3 ultimos livros, deixando elas uma ao lado da outra*/
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+    .titulo{/*modifica o titulo da pagina, cor, tamanho e alinhamento*/
+    margin-top:2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.introducao{ /*Folha de estilo para o fundo da introdução*/
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #0d324d;
+    border-radius: 2rem;
+}
+
+.introducao_texto{ /*Folha de estilo para o texto da introdução*/
+     text-align: start;
+    font-size: 2rem;
+    color: white;
+}
+    .conteudo{
+   align-self: center;
+    width: 80%;
+    height: 30%;
+    margin-right: 10%;
+    margin-left:10% ;
+   
+}
+    
+ 
+.sessao1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sessao2{
+    display: flex;
+   flex-direction: column;
+}
+
+
+/*Folha de estilo para adaptar o site para celulares*/
+}
+@media (max-width:480px){
+    .titulo{/*modifica o titulo da pagina, cor, tamanho e alinhamento*/
+    margin-top:2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+ .introducao{
+    margin: 5%;
+    width: 74% auto;
+    padding:2rem;
+    }
+.introducao_texto{ 
+     text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+    .conteudo{
+   align-self: center;
+    width: 20rem;
+    height: 45rem;
+    margin-right: 10%;
+    margin-left:10% ;
+   
+}
+.conteudo_link img{
+margin-top: 2rem;
+
+
+}
+
+ 
+.sessao1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sessao2{
+    display: flex;
+   flex-direction: column;
+}
+.espacamento1{/*Folha de estilo para o espaçamento do link para a compra do livro "capitães de areia"*/
+    margin-top: 1.7rem;
+}
+.espacamento2{/*Folha de estilo para o espaçamento do link para a compra do livro "a hora da estrela"*/
+    margin-top: 3.6rem;
+}
+.espacamento3{/*Folha de estilo para o espaçamento do link para a compra do livro "tudo é rio"*/
+    margin-top: 2rem;
+}
+.espacamento4{/*Folha de estilo para o espaçamento do link para a compra do livro "Canção de ninar menino grande"*/
+    margin-top: 3rem;
+}
+.espacamento5{/*Folha de estilo para o espaçamento do link para a compra do livro "Canção de ninar menino grande"*/
+    margin-top: 1rem;
+
+}
+}

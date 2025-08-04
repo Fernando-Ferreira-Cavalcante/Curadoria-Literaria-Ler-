@@ -1,0 +1,164 @@
+/*Folha de estilo para a pagina principal*/
+
+*{ /*Aqui foi difinido que a pagina por padrão não terá padding, nem margin e que a fonte usada sera serif monoespaçada*/
+    margin: 0%;
+    padding:0%;
+    font-family: serif, monospace;
+ 
+}
+body {
+
+  overflow-x: hidden; /* esconde qualquer conteúdo que ultrapasse a largura */
+}
+.conteudo{ /*Folha de estilo para o alinhamento de titulo, imagem e texto da pagina principal*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.conteudo_titulo{ /*Folha de estilo referente ao titulo */
+    font-size: 5rem;
+}
+.conteudo_conteudo{ /*Folha de estilo que alinha o texto, a imagem e deixa o fundo com cor preta e arredondada*/
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: row;
+    height: 60%;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    justify-content: center;
+    color: white;
+}
+.conteudo_img{ /*Folha de estilo referente a imagem */
+    margin-left: 3rem;
+    margin-top: 2.8rem;
+    margin-bottom: 3rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+#conteudo_texto_titulo{ /*Folha de estilo referente ao titulo da sessão de texto */
+    
+    font-size: 3rem;
+}
+.conteudo_texto{ /*Folha de estilo referente ao texto*/
+    margin-top: 8rem;
+    padding-left: 5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.conteudo_proposta_img{ /*Folha de estilo referente a imagem da sessão "proposta da Ler+"*/
+    margin-left: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.espacamento1{/*arruma o alinhamento do texto da sessão "Obras influentes"*/
+    margin-top: 1rem;
+}
+.espacamento2{/*arruma o alinhamento do texto da sessão "Autores"*/
+    padding-top: 1.5rem;
+}
+.espacamento3{/*arruma o alinhamento do texto da sessão "Periodos Literarios"*/
+    padding-top: 0.5rem;
+}
+.espacamento4{/*arruma o alinhamento do texto da sessão "Obras Premiadas"*/
+    padding-top: 1.5rem;
+}
+.espacamento5{/*arruma o alinhamento do texto da sessão "Editoras"*/
+    padding-top: 4rem;
+}
+
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+    .conteudo_titulo{
+    font-size: 4rem;
+    text-align: center;
+}
+
+    .conteudo_conteudo{ 
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.conteudo_proposta_img{ 
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    align-self: center;
+    margin-left: 1rem;
+}
+.conteudo_img{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    align-self: center;
+    margin-left: 0;
+}
+.conteudo_texto{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+.espacamento4{
+    padding-top: 1rem;
+}
+.espacamento5{
+    padding-top: 1rem;
+}
+}
+/*Folha de estilo para adaptar o site para tela de celulares*/
+@media (max-width:480px){
+    .conteudo_titulo{ 
+    font-size: 3rem;
+    text-align: center;
+}
+
+    .conteudo_conteudo{ 
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.conteudo_proposta_img{ 
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    align-self: center;
+    margin-left: 1rem;
+}
+.conteudo_img{ 
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    align-self: center;
+    margin-left: 0;
+}
+.conteudo_texto{ 
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+.espacamento4{
+    padding-top: 1rem;
+}
+.espacamento5{
+    padding-top: 1rem;
+}
+}
+

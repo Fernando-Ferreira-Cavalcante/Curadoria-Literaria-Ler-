@@ -1,0 +1,117 @@
+/*Folha de estilo para Editoras*/
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.introducao{ /*Folha de estilo para o fundo da intrdução*/
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #0d324d;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+.introducao_texto{ /*Folha de estilo para o texto da introdução*/
+     text-align: start;
+    font-size: 2rem;
+    color: white;
+
+}
+.conteudo{ /*deixa o fundo na cor preta e alinha os elementos dentro dele*/
+    background-color: rgb(0, 0, 0);
+    margin: 2rem;
+    border-radius: 2rem;
+    height: 20%;
+    padding: 2rem;
+}
+.conteudo_img{ /*edita o tamanho e poscionamento da imagem*/
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    padding: 1.5rem;    
+    border-radius: 2rem;
+}
+.conteudo_titulo{ /*edita cor, tamanho e alinhamento do titulo de cada sessão de editoras */
+    padding-top:1rem ;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.conteudo_texto{/*edita cor, tamanho e alinhamento do titulo de cada sessão de editoras */
+    color:white;
+    font-size: 2rem;
+    text-align: start;
+    margin-bottom: 1rem;
+       white-space: -0.1rem;
+}
+.conteudo_link{/*edita a cor e posicionamento do link */
+    text-decoration: none;
+    color:#0062a8;
+    font-size: 1.5rem;
+}
+.conteudo_link:hover{ /*sublinha o link quando passa o mouse por cima*/
+    text-decoration: underline;
+    color:#0062a8;
+}
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+    .conteudo{
+    height: 50%;
+    padding: 2rem;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    font-size: 4rem;
+    text-align: center;
+}
+.conteudo_titulo{
+  text-align: start;
+  font-size: 2.5rem;
+}
+.conteudo_img{
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    padding: 1rem;    
+    border-radius: 2rem;
+}
+
+
+/*Folha de estilo para adaptar o site para tela de celular*/
+}
+@media (max-width:480px){
+    .conteudo{
+    height: 50%;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.conteudo_img{
+    width: 10rem;
+    height: 10rem;
+    float: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+.conteudo_titulo{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.conteudo_texto{
+    color:white;
+    font-size: 1.5rem;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+}

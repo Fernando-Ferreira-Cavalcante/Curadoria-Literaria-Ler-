@@ -1,0 +1,151 @@
+/*Folha de estilo para Periodos*/
+
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: serif, monospace;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.introducao{ /*Folha de estilo para o fundo da introdução*/
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #0d324d;
+    border-radius: 2rem;
+}
+.introducao_titulo{ /*Folha de estilo para o titulo da introdução*/
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.introducao_texto{ /*Folha de estilo para o texto da introdução*/
+     text-align: justify;
+    font-size: 2rem;
+    color: white;
+
+}
+
+
+
+/*Folhas de estilo para o estilo e formatação de todos os periodos literarios*/
+.periodos{ 
+    margin: 5%;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+}
+.periodos_titulo{/*Folhas de estilo para o estilo e formatação de todos os titulos dos periodos literarios*/
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.periodos_texto{/*Folhas de estilo para o estilo e formatação de todos os textos dos periodos literarios*/
+    text-align: start;
+    font-size: 2rem;
+    color: white;
+}
+.periodos_autores{/*Folhas de estilo para o estilo e formatação de todos os autores dos periodos literarios*/
+    margin-top: 2rem;
+    color: white;
+    text-align: start;
+    font-size: 2rem;
+}
+.periodos_autores_titulo{/*Folhas de estilo para o estilo e formatação de todos os titulo de autores dos periodos literarios*/
+    color: white;
+    text-align: start;
+    font-size: 3rem;
+}
+
+.periodos_obras_titulo{/*Folhas de estilo para o estilo e formatação de todos os titulos de obras dos periodos literarios*/
+    margin-top: 2rem;
+    text-align: start;
+    font-size: 3rem;
+    color: white;
+}
+.periodos_obras_lista{/*Folhas de estilo para o estilo e formatação de todas as listas dos periodos literarios*/
+    margin-left: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px)and (max-width:1024px){
+    .titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+        .introducao_titulo{ 
+    font-size: 2rem;
+}
+.introducao_texto{ 
+    font-size: 1rem;
+    text-align: start;
+}
+.periodos_titulo{
+    font-size: 2rem;
+}
+.periodos_texto{
+    font-size: 1rem;
+}
+.periodos_autores{
+    font-size: 1rem;
+}
+.periodos_autores_titulo{
+    font-size: 2rem;
+}
+.periodos_obras_titulo{
+font-size: 2rem;
+}
+.periodos_obras_lista{
+    margin-left: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+/*Folha de estilo para adaptar o site para tela de celulares */
+}
+@media (max-width:480px){
+    .titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+    .introducao_titulo{ 
+    font-size: 2rem;
+}
+.introducao_texto{ 
+    font-size: 1rem;
+    text-align: start;
+}
+.periodos_titulo{
+    font-size: 2rem;
+}
+.periodos_texto{
+    font-size: 1rem;
+}
+.periodos_autores{
+    font-size: 1rem;
+}
+.periodos_autores_titulo{
+    font-size: 2rem;
+
+}
+
+.periodos_obras_titulo{
+
+    font-size: 2rem;
+}
+.periodos_obras_lista{
+
+    font-size: 1rem;
+}
+}

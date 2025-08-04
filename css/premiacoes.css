@@ -1,0 +1,194 @@
+/*Folha de estilo para Premiações*/
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.introducao{ /*Folha de estilo para o fundo da introdução*/
+    margin: 10vh;
+    padding: 2rem;
+    background-color: #0d324d;
+    border-radius: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.espaco{/*permite que duas sessões fiquem uma ao lado da outra e que o restante fique abaixo seguindo o padrão*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.premios{/*feito para o fundo das sessão dos premios*/
+    margin: 5%;
+    padding: 2rem;
+    width: 40%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+}
+
+.premios_titulo{ /*feito para editar o titulo das sessões de premios*/
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.premios_img_conteiner{ /*feito para auxiliar a edição da imagem das sessão dos premios*/
+    width: 12rem;
+    height: 12rem;
+    float: left;
+    padding-right: 0rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+}
+.premios_img_conteiner_apca{ /*feito para auxiliar a edição da imagem da sessão dos premios exclusivos para o premio apca*/
+    width: 12rem;
+    height: 12rem;
+    float: left;
+    padding:0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+
+.premios_link img{ /*feito para edição das imagens das sessão dos premios*/
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 1rem;
+}
+
+.premios_texto{ /*feito para edição os textos das sessão dos premios*/
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.premios_destaques{ /*feito para editar das sessão dos premios*/
+    margin-top: 4rem;  
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.premios_titulo_apca{ /*feito para editar somente o titulo da sessão do premio apca */
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+
+    .introducao{
+   margin-bottom: 2rem;
+   
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+    .premios{
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
+.espaco{
+    display: flex;
+    flex-direction: column;
+}
+.premios_img_conteiner{
+    width: 8rem;
+    height: 8rem;
+}
+.premios_img_conteiner_apca{ 
+    width: 8rem;
+    height: 8rem;
+
+}
+.premios_titulo{
+    text-align: center;
+    font-size: 3rem;
+   
+}
+.premios_texto{
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.premios_destaques{
+    margin-top: 4rem;  
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+}
+
+/*Folha de estilo para adaptar o site para tela de celulares*/
+@media (max-width:480px){
+
+    .introducao{ 
+   margin:5%;
+   font-size: 2rem;
+   
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+    .premios{
+        margin:5%;
+    align-self: center;
+        width: 80%;
+    height: auto;
+}
+.espaco{
+    display: flex;
+    flex-direction: column;
+}
+.premios_img_conteiner{
+    width: 5rem;
+    height: 5rem;
+}
+.premios_img_conteiner_apca{ 
+    width: 5rem;
+    height: 5rem;
+}
+.premios_titulo{
+    text-align: center;
+    font-size: 3rem;
+   
+}
+.premios_texto{
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.premios_destaques{
+    margin-top: 4rem;  
+    text-align: start;
+    font-size: 1.5rem;
+    color: white;
+}
+}

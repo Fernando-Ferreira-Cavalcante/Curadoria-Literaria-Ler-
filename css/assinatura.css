@@ -1,0 +1,118 @@
+/*Folha de estilo para Assinatura*/
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.assinatura{/*configura o fundo da seesão de assinatura e contato*/
+    background-color: #0d324d;
+    height: 90vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2rem;
+   border-radius: 2rem;
+}
+.assinatura_texto{/*edita o texto das sessões de assinatura*/
+    text-align: start;
+    color: white;
+    font-size: 2.5rem;
+}
+.assinatura_conteudo{
+margin-left: 17%;
+}
+main{
+margin-bottom: 5rem;
+}
+footer{
+    margin-top: 1%;
+}
+.assinatura_email{/*edita a parte de onde o usuario escreve o nome*/
+    margin-top: 2rem;
+    width: 65%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.assinatura_botao{/*edita o botão de envio*/
+    background-color: #ffffff;
+    color: #0d324d;
+    width: 15%;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.assinatura_botao:hover{/*faz com que o botão de envio aumente de tamanho quando passar o mouse por cima*/
+    transform: scale(1.05);
+}
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+.assinatura{
+    align-self: center;
+    height: 50%;
+    width: 70%;
+    margin-bottom: 40%;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    font-size: 4rem;
+    text-align: center;
+}
+.assinatura_email{
+width: 84%;
+ margin-left: -3rem;
+}
+.assinatura_botao{
+    margin: 2rem auto;
+}}
+
+
+footer{
+    margin-top: -4.4vh;
+}
+
+
+
+
+/*Folha de estilo para adaptar o site para tela de celular*/
+@media (max-width:480px){
+    .assinatura{
+    align-self: center;
+    height: 50%;
+    width: 70%;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+   
+    font-size: 3rem;
+    text-align: center;
+}
+.assinatura_texto{
+font-size: 1.5rem;
+}
+.assinatura_conteudo{
+margin-left: 0%;
+}
+.assinatura_email{
+    margin-top: 2rem;
+ display: block; 
+  margin: 2rem auto;
+  width: 13rem;
+}
+.assinatura_botao{
+ display: block; 
+  margin: 2rem auto;
+  width: 5rem;
+
+}
+main{
+    margin-bottom: 55%;
+}
+}
+

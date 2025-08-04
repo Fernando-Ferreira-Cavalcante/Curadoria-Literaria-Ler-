@@ -1,0 +1,301 @@
+/*Folha de estilo para o Cabeçalho e Rodapé */
+
+
+* {
+  box-sizing: border-box;
+  
+}
+main{
+  margin-bottom: 10rem;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+.ativado {/*sublinha o link da pagina em que o usuario está */
+  text-decoration: underline;
+  color: white;
+}
+
+header {/*diz que o header vai ocupar 100% do tamanho da pagina*/
+  width: 100%;
+  max-width: 100%;
+}
+
+.topo {/*edita os itens do topo da pagina*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d324d;
+  height: 20vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.logo img {/*edita o tamanho e espaçamento da logo*/
+  margin-top: -0.5rem;
+  width: 12rem;
+  height: 8rem;
+  max-width: 100%;
+  display: block;
+}
+
+.link_topo {/*cria um espaçamento nos links do topo*/
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link_topo a {/*edita a cor e tamanho dos links do topo*/
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.link_topo a:hover {/*sublinha os links quando passar o mouse por cima*/
+  text-decoration: underline;
+  color: white;
+}
+
+
+.barra_navegacao {/*edita cor e espaçamento do links da barra de navegação*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 3vh;
+  padding-bottom: 1rem;
+}
+
+.barra_navegacao a {/*edita as letras dos links*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.barra_navegacao a:hover {/*sublinha os links quando passa o mouse por cima*/
+  text-decoration: underline;
+  color: white;
+}
+.rodape{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   background-color: #0d324d;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    padding-top: 1rem;
+}
+
+.menu-toggle {/*torna o menu para mobile invisivel na pagina para computador */
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-container {/*edita o conteiner do menu para ter a mesma cor do topo*/
+  background-color: #0d324d;
+}
+
+.mobile {/*oculta links da barra de navegação*/
+  display: none;
+}
+
+
+
+/*Folha de estilo para Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .rodape {
+    height: 5vh;
+  }
+ .topo {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+main {
+  margin-bottom: 10rem;
+}
+  .logo {
+    flex: 1;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    padding-left: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .link_topo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .barra_navegacao {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    left: 0;
+    height: 45%;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .barra_navegacao.show {
+    display: flex;
+  }
+
+  .ativado {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .barra_navegacao a {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+/* Folha de estilo para celular */
+@media (max-width: 480px) {
+  
+     /* Remove qualquer scroll horizontal */
+  html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Garante que todos os elementos respeitem os limites da tela */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Evita que conteúdo escondido embaixo do rodapé apareça */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: auto;
+  }
+
+  /* Corrige imagens ou seções que possam extrapolar */
+  img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Quebra links ou textos longos */
+  body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+main {
+  margin-bottom: 10rem;
+}
+  .logo {
+    flex: 1;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    padding-left: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .link_topo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .barra_navegacao {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .barra_navegacao.show {
+    display: flex;
+  }
+
+  .ativado {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .barra_navegacao a {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .rodape {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

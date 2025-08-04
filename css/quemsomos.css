@@ -1,0 +1,124 @@
+/*Folha de estilo para Quem Somos*/
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    margin-top:2rem;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.quemsomos{/*edita o fundo da sessão "Quem somos"*/
+    background-color: #0d324d;
+    align-content: center;
+    text-align: center;
+    margin: 10vh;
+    width: auto;
+    height: 30%;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.quemsomos_img{/*edita a imagem da sessão "Quem somos*/
+    height: 25rem;
+    width: auto;
+    margin-top: -5rem;
+}
+.quemsomos_texto{ /*edita o texto da sessão "Quem somos*/
+    margin-top: 2rem;
+    text-align: start;
+    color: white;
+    font-size: 2rem;
+}
+.contato{ /*edita o espaçamento dos icones de contato*/
+    display:flex;
+    justify-content: space-around;
+}
+.contato_img{/*edita o tamanho dos icones de contato*/
+   width: 5rem;
+}
+.contato_img:hover{/*edita o tamanho dos icones de contato, aumentando o tamanho quando passar o mouse*/
+   
+  transform: scale(1.05);
+
+}
+#contato_img_instagram{/*edita o tamanho dos icone do instagram de contato*/
+    width: 7rem;
+    margin-top: -1rem;
+}
+#contato_img_instagram:hover{/*edita o tamanho do icone do instagram, aumentando o tamanho quando passar o mouse*/
+transform: scale(1.05);
+}
+.contato_titulo{/*edita o titulo da sessão contato*/
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.contato_texto{/*edita o texto da sessão contato*/
+    color: white;
+     text-align: start;
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Folha de estilo para adaptar o site para tela de tablet */
+@media (min-width:481px) and (max-width:1024px){
+    .quemsomos{
+        height: 70%;
+        
+    }
+    .contato_img{
+   width: 4rem;
+   margin-top: -0.2rem;
+}
+
+#contato_img_instagram{
+    width: 5.8rem;
+    margin: -1rem;
+    margin-top: rem;
+}
+.titulo{ /*Folha de estilo para o titulo*/
+    font-size: 4rem;
+   
+}
+}
+
+
+
+@media (max-width:480px){
+  .quemsomos{
+    background-color: #0d324d;
+    align-content: center;
+    text-align: center;
+    margin: 5%;
+    width: auto;
+    height: 75%;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.quemsomos_img{
+    height: 15rem;
+    width: auto;
+    margin-top: -5rem;
+}
+    .contato_img{
+   width: 2rem;
+   margin-top: -0.5rem;
+}
+
+#contato_img_instagram{
+    width: 3rem;
+    margin: -1remrem;
+    margin-top: -1rem;
+    
+}
+.titulo{ /*Folha de estilo para o titulo*/
+  
+    font-size: 3rem;
+   
+}
+}

@@ -1,0 +1,141 @@
+<!--Página principal-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ler +</title>
+    <link rel="shortcut icon" href="img/ler+logoalt.png" type="image/x-icon"><!--Muda o icone de favorito ao lado do titulo-->
+    
+    <link rel="stylesheet" href="css/cabecalho-rodape.css"><!--linka essa pagina com um css para o cabeçalho e o rodapé-->
+  
+
+    <link rel="stylesheet" href="css/index.css"><!--linka essa pagina com um css para a pagina-->
+</head>
+<body>
+   <div class="pai">
+  
+  <!--todas as páginas terão um header igual, seus comentarios e funcionalidades serão as mesmas -->
+    <header>
+      <section class="topo"><!--cria um section para o topo dapagina, onde esta a logo e os links de "Quem somos" e "assinatura"-->
+
+     <div class="logo"><!--permite que o css modifique as caracteristicas da logo e transforma a logo em um link para a pagina principal do site-->
+        <a href="index.html">
+      <img src="img/ler+logo.png" alt="Logo ler+">
+    </a>
+  </div>
+
+  <div class="menu-toggle" id="btn-menu">&#9776;</div><!--cria um botão de menu, usado apenas em dispositivos moveis-->
+
+  <div class="link_topo"><!--permite a modificação dos link do topo ao lado da lago, "quem somos" e "Assinatura"-->
+    <a href="quesomos.html">Quem somos</a>
+    <a href="assinatura.html">Assinatura</a>
+  </div>
+</section>
+        <nav>
+          <div class="menu-container"><!--feita para a modificação da barra de navegação para dispositivos moveis -->
+
+          <div class="barra_navegacao" id="menu"><!--permite a modifiação da barra de navegação com css e um id para outras modifações em dispositivos moveis-->
+
+      <section class="ativado"><!--Feito para modifiações em css, indica em qual pagina o usuario esta no momento-->
+        <a href="index.html">Home</a>
+      </section>
+      <a href="obras.html">Obras</a>
+      <a href="autores.html">Autores</a>
+      <a href="periodos.html">Períodos</a>
+      <a href="premiacoes.html">Premiações</a>
+      <a href="editoras.html">Editoras</a>
+      <a class="mobile" href="quemsomos.html">Quem somos</a>
+      <a class="mobile" href="assinatura.html">Assinatura</a>
+    </div>
+  </div>
+</nav>
+<script src="javascript/menu.js"></script><!--Linka para uma pagina em javascript que permite um dropdown menu em dispositivos moveis-->
+</div>
+    </header>
+       
+    <main>
+        <!--Os comentarios dos seguintes codigos, são quase totalmente universais em toda essa pagina, os locais onde essa padrão não é seguido terão um comentario explicando-->
+
+        <section class="conteudo"><!--feito para a modificação das sessões informativas do site-->
+
+        <h1 class="conteudo_titulo">Proposta da Ler+</h1> <!--permite a modificação com css dos titulos de cada sessão -->
+
+        <div class="conteudo_conteudo"><!--permite a modificação de todos os elementos a baixo, agrupando eles em um coisa só-->
+
+        <img src="img/ler+logoalt.png" alt="logo alternativa da Ler+" class="conteudo_proposta_img"><!--modifica unicamente a imagem da sessão "proposta da ler+"-->
+        
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Curadoria Ler+</span><br> A Ler+ é uma curadoria dedicada à valorização da literatura brasileira. Nosso objetivo é reunir obras, autores e editoras que marcaram época, incentivando o hábito da leitura por meio de uma seleção cuidadosa e acessível. Com o Ler+, queremos aproximar leitores de histórias que transformam, inspiram e refletem a diversidade cultural do Brasil.</p>
+        </div>
+        </section>
+
+
+        <section class="conteudo">
+        <h1 class="conteudo_titulo">Obras influentes</h1> 
+        <div class="conteudo_conteudo">
+        <img src="img/As 20 obras mais importantes da literatura brasileira_A.jpg" class="conteudo_img" alt="Imagem de varios livros brasilerios famosos">
+        <div class="espacamento1"><!--cria um espaçamento especifico para esse texto, feito para arrumar o alinhamento-->
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Obras Nacionais importantes</span><br>As obras selecionadas pelo Ler+ representam momentos marcantes da literatura brasileira. Cada título aqui ecoa a identidade, os conflitos e a riqueza cultural do nosso país, sendo fundamentais para compreender o Brasil por meio da leitura.</p>
+        </div>
+        </div>
+        </section>
+
+
+        <section class="conteudo">
+        <h1 class="conteudo_titulo">Autores</h1> 
+        <div class="conteudo_conteudo">
+        <img src="img/1920-1977_Clarice_Lispector_6zxkp_please_creditpalette.fm_.png" class="conteudo_img" alt="Imagem da escritora Clarice Lispector que escreveu livros muito bons">
+        <div class="espacamento2"><!--cria um espaçamento especifico para esse texto, feito para arrumar o alinhamento-->
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Autores nacionais influentes</span><br>Celebramos os autores que moldaram a literatura nacional com suas vozes únicas. No Ler+, destacamos escritores e escritoras que desafiaram seu tempo, abriram caminhos e deixaram um legado literário indispensável.</p>
+        </div>
+        </div>
+        </section>
+
+
+        <section class="conteudo">
+        <h1 class="conteudo_titulo">Periodos Literarios</h1> 
+        <div class="conteudo_conteudo"> 
+        <img src="img/6b8dfb0315224b0094050d50486a941c.jpg" class="conteudo_img" alt="Imagem da chegada dos portuguese no Brasil">
+        <div class="espacamento3"><!--cria um espaçamento especifico para esse texto, feito para arrumar o alinhamento-->
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Periodos literarios nacionais</span><br>A literatura brasileira se constrói em fases. Nesta seção do Ler+, apresentamos os principais períodos literários, suas características, contextos históricos e autores representativos, traçando uma linha do tempo da nossa produção cultural.</p>
+        </div>
+        </div>
+        </section>
+
+
+        <section class="conteudo">
+        <h1 class="conteudo_titulo">Obras Premiadas</h1> 
+        <div class="conteudo_conteudo">
+        <img src="img/Vencedores Prêmio Jabuti 2021.jpg" class="conteudo_img" alt="imagens de livros vencedores do premio Jabuti">
+        <div class="espacamento4"><!--cria um espaçamento especifico para esse texto, feito para arrumar o alinhamento-->
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Obras nacionais premiadas</span><br>Reconhecimento também conta história. As obras premiadas reunidas no Ler+ são destaques da crítica e do público, e mostram a potência da escrita brasileira em prêmios nacionais e internacionais.</p>
+        </div>
+        </div>
+        </section>
+
+
+        <section class="conteudo">
+        <h1 class="conteudo_titulo">Editoras</h1> 
+        <div class="conteudo_conteudo">
+        <img src="img/editoras.jpg" class="conteudo_img" alt="imagens de algumas editoras">
+        <div class="espacamento5"><!--cria um espaçamento especifico para esse texto, feito para arrumar o alinhamento-->
+        <p class="conteudo_texto"><span id="conteudo_texto_titulo">Editoras nacionais</span><br>As editoras são pontes entre autor e leitor. No Ler+, destacamos aquelas que investem na literatura nacional, promovem novos talentos e preservam a memória de grandes clássicos.</p>
+        </div>
+        </div>
+        </section>
+
+
+    </main>
+
+</div>
+    <footer>
+      <div class="pai">
+        <section class="rodape"><!--Sessão feita para modificar o rodapé-->
+        <p>Site desenvolvido por: Fernando Everson F. Cavalcante</p>
+        </section>
+</div>
+
+    </footer>
+</body>
+</html>    

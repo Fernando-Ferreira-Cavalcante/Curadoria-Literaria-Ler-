@@ -1,0 +1,80 @@
+<!--Página Assinatura-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ler + Assinatura</title>
+   <link rel="shortcut icon" href="img/ler+logoalt.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cabecalho-rodape.css">
+    <link rel="stylesheet" href="css/assinatura.css">
+</head>
+<body>
+    
+    <header>
+<section class="topo">
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/ler+logo.png" alt="Logo ler+">
+    </a>
+  </div>
+  <div class="menu-toggle" id="btn-menu">&#9776;</div>
+
+  <div class="link_topo">
+    <a href="quemsomos.html">Quem somos</a>
+    <a href="assinatura.html"> <section class="ativado">Assinatura</section></a>
+  </div>
+</section>
+        <nav>
+   <div class="menu-container">
+    <div class="barra_navegacao" id="menu">
+      <a href="index.html">Home</a>
+      <a href="obras.html">Obras</a>
+      <a href="autores.html">Autores</a>
+      <a href="periodos.html">Períodos</a>
+      <a href="premiacoes.html">Premiações</a>
+      <a href="editoras.html">Editoras</a>
+      <a class="mobile" href="quemsomos.html">Quem somos</a>
+      <a class="mobile" href="assinatura.html"><section class="ativado">Assinatura</section></a>
+    </div>
+    </div>
+    </nav>
+    <script src="javascript/menu.js"></script>
+  </header>
+
+    <main>
+        <h1 class="titulo"> Assinatura</h1><!--titulo principal da pagina-->
+        <section class="assinatura"><!--section que permite editar o posicionamento de todos os eemsntos dento dele-->
+
+            <p class="assinatura_texto">Quer receber recomendações exclusivas de livros nacionais direto no seu e-mail?
+            Assine a nossa curadoria e fique por dentro das melhores obras da literatura brasileira, selecionadas especialmente para você! <br><br>Cadastre seu e-mail abaixo e descubra novos livros, clássicos e novidades para enriquecer suas leituras.</p><!--texto prinicpal da sessão de assinatura-->
+            <div class="assinatura_conteudo"><!--feito para organizar e editar os elementos dentro dele-->
+
+            <form id="form" class="assinatura_formulario"><!--abre um formulario-->
+
+            <input class="assinatura_email" type="email" name="user_email" placeholder=" Seu e-mail" required>
+            <!--cria um espaço para o usuario digitar um email-->
+
+            <input type="hidden" name="bcc_email" value="curadoria@lermais.com.br"><!--fica escondido mas guarda a informação de para onde deve ser enviada as informações-->
+
+            <button class="assinatura_botao"type="submit">Assinar</button><!--cria um botão que envia as informações adicionadas no espaça para digitar email-->
+            </form>
+        </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script><!--link com a api emailJS que envia uma email para o usuario sem precisar de back-end-->
+
+    <script src="javascript/assinatura.js"></script><!--link essa pagina com uma em javascript-->
+    </main>
+
+
+    <footer>
+  <section class="rodape">
+        <p>Site desenvolvido por: Fernando Everson F. Cavalcante</p>
+        </section>
+    </footer>
+</body>
+</html>    
+
+    
